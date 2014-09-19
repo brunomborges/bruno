@@ -15,9 +15,9 @@ import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
 
 public class LoginPage {
-    public static String EMAIL_ADRESS = "brunomelgarejoborges@gmail.com";
-    public static String CORRECT_PASSWORD = "0000";
-    public static String INCORRECT_PASSWORD = "0000";
+    public static String EMAIL_ADRESS = "bruno1@gmail.com";
+    public static String CORRECT_PASSWORD = "Tartaruga01";
+    public static String INCORRECT_PASSWORD = "Tartaruga01";
 
     private static FirefoxDriver driver;
 

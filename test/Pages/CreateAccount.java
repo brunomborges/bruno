@@ -22,10 +22,10 @@ import static org.junit.Assert.assertTrue;
  * Created by bborges on 9/3/14.
  */
 public class CreateAccount {
-    public static String EMAIL_ADDRESS = "bruno.mborg@gmail.com"+System.currentTimeMillis()+"@gmail.com";
+    public static String EMAIL_ADDRESS = "teste1"+System.currentTimeMillis()+"@gmail.com";
     public static String CORRECT_PASSWORD = "Ikr2514201";
-    public static String WEAK_PASSWORD = "12345";
-    public static String NULL_PASSWORD = "      ";
+    public static String WEAK_PASSWORD = "123";
+    public static String UNMATCHED_PASSWORD = "1234";
 
 
     private static FirefoxDriver driver;
