@@ -5,3 +5,5 @@ flipkart
 Flipkart automated pratice.iml
 Install-Package
 test/.DS_Store
+*.iml
+target/
