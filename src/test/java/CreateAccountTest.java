@@ -3,26 +3,17 @@
  */
 
 
+import Pages.CreateAccount;
 import org.hamcrest.Matchers;
-import org.junit.*;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.OutputType;
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
-import static org.hamcrest.CoreMatchers.containsString;
-import Pages.CreateAccount;
 
 public class CreateAccountTest {
     public FirefoxDriver driver;
