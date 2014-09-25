@@ -67,16 +67,4 @@ public class LoginPageTest {
         loginPage.clickLoginButton();
         loginPage.sucssessfulLogin();
     }
-
-    public void incorrectLog(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.getUrl("http://www.flipkart.com/account");
-        loginPage.setEmail("bruno1@gmail.com");
-        loginPage.setPassword("Tartaruga01");
-        loginPage.clickLoginButton();
-        loginPage.sucssessfulLogin();
-    }
-
-
-
 }
