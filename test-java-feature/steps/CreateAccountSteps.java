@@ -1,15 +1,9 @@
 package steps;
 
-import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import flipKart.pages.CreateAccount;
 import org.hamcrest.Matchers;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -23,7 +17,7 @@ import static org.junit.Assert.assertThat;
  * Created by bborges on 9/26/14.
  */
 
-public class flipkartSteps {
+public class CreateAccountSteps {
 
     private static FirefoxDriver driver;
 

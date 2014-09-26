@@ -13,12 +13,12 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by bborges on 9/3/14.
  */
-public class CreateAccount {
+public class CreateAccountPage {
 
 
     private static FirefoxDriver driver;
 
-    public CreateAccount(FirefoxDriver driver){
+    public CreateAccountPage(FirefoxDriver driver){
         this.driver = driver;
     }
 
