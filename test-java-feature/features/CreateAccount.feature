@@ -1,5 +1,8 @@
 Feature: Account Creation
 
+  Background:
+    Given I am in the home page
+
   Scenario: Create an account with weak password
     Given I have clicked the Sign Up button on the upper menu
     And I have entered a valid email address

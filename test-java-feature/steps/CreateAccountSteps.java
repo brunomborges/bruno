@@ -22,15 +22,6 @@ public class CreateAccountSteps {
     private static FirefoxDriver driver;
 
 
-    @cucumber.api.java.Before
-    public void setup() {
-
-        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://www.flipkart.com/");
-    }
-
-
     @cucumber.api.java.After
     public void tearDown(){
         driver.close();
@@ -39,6 +30,14 @@ public class CreateAccountSteps {
 
 
 
+
+
+        @Given("^I am in the home page$")
+        public void I_am_in_the_home_page ()throws Throwable {
+            driver = new FirefoxDriver();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.get("http://www.flipkart.com/");
+        }
 
 
         @Given("^I have clicked the Sign Up button on the upper menu$")
