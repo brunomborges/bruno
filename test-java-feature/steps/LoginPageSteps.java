@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -58,7 +59,12 @@ public class LoginPageSteps {
 
     }
 
-
-
-
+    @Then("^I should login in the system$")
+    public void I_should_login_in_the_system() throws Throwable {
+        boolean result = driver.findElementByClassName("greeting-link").isEnabled();
+        assertThat(result, equalTo(Boolean.TRUE));
     }
+
+
+
+}

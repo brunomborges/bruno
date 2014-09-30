@@ -15,3 +15,8 @@ Feature: User Login
     When I press the Login button
     Then The error message "Email/Password combination is wrong." should appear on the screen and user should not be loged in
 
+  Scenario: Login with an account
+    Given I have entered "bruno1@gmail.com" as an email address
+    And I have entered "Tartaruga01" as a password to login
+    When I press the Login button
+    Then I should login in the system
